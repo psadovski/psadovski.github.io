@@ -42,7 +42,7 @@ $(document).ready(function() {
     var taskId = parentEl.attr('data-task-id');
     var taskTitle = parentEl.find('[data-task-name-input]').val();
     var taskContent = parentEl.find('[data-task-content-input]').val();
-    var requestUrl = apiRoot + 'updateTask';
+    var requestUrl = apiRoot + 'update';
 
     $.ajax({
       url: requestUrl,
@@ -66,7 +66,7 @@ $(document).ready(function() {
   function handleTaskDeleteRequest() {
     var parentEl = $(this).parent().parent();
     var taskId = parentEl.attr('data-task-id');
-    var requestUrl = apiRoot + 'deleteTask';
+    var requestUrl = apiRoot + 'delete';
 
     $.ajax({
       url: requestUrl + '/?' + $.param({
@@ -85,7 +85,7 @@ $(document).ready(function() {
     var taskTitle = $(this).find('[name="title"]').val();
     var taskContent = $(this).find('[name="content"]').val();
 
-    var requestUrl = apiRoot + 'createTask';
+    var requestUrl = apiRoot + 'create';
 
     $.ajax({
       url: requestUrl,
