@@ -1,7 +1,7 @@
 $(document).ready(function() {
   const apiRoot = 'https://limitless-retreat-17162.herokuapp.com/v1/task/';
   const trelloApiRoot = 'https://limitless-retreat-17162.herokuapp.com/v1/trello/';
-  const datatableRowTemplate = $('[data-datatable-row-template]').children()[0];
+ const datatableRowTemplate = $('[data-datatable-row-template]').children()[0];
   const $tasksContainer = $('[data-tasks-container]');
 
   var availableBoards = {};
